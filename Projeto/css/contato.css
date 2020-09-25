@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+body {
+    background: url('../imagens_projeto/constructive_bg_04.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;;
+    color: white
+}
+
+section#form {
+    padding: 3rem;
+}
+
+section#form h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+section#form form#contato-form {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    text-shadow: 0px 3px 2px rgb(50, 50, 50, 1);
+    background-color: rgba(0,0,0,0.25);
+    padding: 4rem 1rem;
+}
+
+section#form .form-group {
+    margin-bottom: 1rem;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-weight: 300;
+}
+
+section#form .form-group input{
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    outline: none;
+}
+
+section#form textarea#msg { 
+    width: 100%;
+    height: 15rem;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    resize: vertical;
+}
+
+
+.button {
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 15px 43px;
+    cursor: pointer;
+    outline: none;
+    
+    display: block;
+    margin-left: auto;
+    margin-top: 1rem;
+   
+}
+
+.button:hover {
+    border-color: #33ccff;
+    color: #33ccff;
+}
+
+#contato-form p {
+    width: 94%;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+#contato-form address {
+    width: 70%;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 38px;
+   
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 7px;
+}
+
+@media (min-width: 1000px) {
+
+    section#form {
+        margin-left: 35%;
+    }
+
+    section#form h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    section#form form#contato-form {
+        padding: 60px 55px;
+    } 
+
+    section#form textarea#msg { 
+        width: 100%;
+    }
+
+    #contato-form p {
+        width: 96%;
+        font-size: 18px;
+    }
+
+    #contato-form address {
+        width: 50%;
+    }
+    
+    footer {
+        position: relative;
+        top: -30px;
+        width: 40%;
+        margin-left: 55%;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Template Front-end</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site modelo"> <!-- Descrição do site ou empresa -->
+    <meta name="keywords" content="HTML, CSS, Templates, Produtos, Sofisticação"> <!-- Palavras chaves para encontrar sua página web -->
+    <meta name="author" content="Samio Santos"> <!-- Nome da sua empresa ou autor do site -->
+    <meta name="robots" content="index, follow"> <!-- controla o comportamento de rastreamento e indexação dos mecanismos de pesquisa. -->
+
+
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <link rel="shortcut icon" href="./projeto_imagens/icones/desenvolvedores.png">
+
+    <link href="fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body>
+    <main>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <img id="menu" src="./imagens_projeto/cardapio_1.png" alt="Menu">
+            </label>
+        
+        <section class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./projeto5_site_index.html"><i class="fas fa-home tm-nav-fa-icon"></i><span>Introdução</span></a></li>
+                    <li><a href="./projeto5_site_produtos.html"><i class="fas fa-map tm-nav-fa-icon"></i> <span>Produtos</span></a></li>
+                    <li><a href="./projeto5_site_nossa_empresa.html"><i class="fas fa-users tm-nav-fa-icon"></i><span>Nossa empresa</span></a></li>
+                    <li><a href="./projeto5_site_contato.html"><i class="fas fa-comments tm-nav-fa-icon"></i><span> Contate-Nos</span></a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- <button type="button" class="next-button-slick">Next</button> -->
+        <div class="carrossel">
+            <div><img src="imagens_projeto/gallery-img-01-tn.jpg" alt=""></div>
+            <div><img src="imagens_projeto/gallery-img-02-tn.jpg" alt=""></div>
+            <div><img src="imagens_projeto/gallery-img-03-tn.jpg" alt=""></div>
+            <div><img src="imagens_projeto/gallery-img-04-tn.jpg" alt=""></div>
+            <div><img src="imagens_projeto/gallery-img-05-tn.jpg" alt=""></div>
+            <div><img src="imagens_projeto/gallery-img-06-tn.jpg" alt=""></div>
+        </div>
+        <!-- <button type="button" class="prev-button-slick">Previous</button> -->
+
+        <footer>
+            <p>Copyright © 2018 Constructive Co. Ltd. - Design: Tooplate</p>
+        </footer>   
+    </main>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.carrossel').slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                variableWidth: true,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                    breakpoint: 700,
+                    settings: {
+                        dots: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        }
+                    } 
+                ]
+             });
+        });
+      </script>
+</body>
+</html>

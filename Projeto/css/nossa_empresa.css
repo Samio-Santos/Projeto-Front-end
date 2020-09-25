@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+body {
+    background: url('../imagens_projeto/constructive_bg_03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;;
+    color: white
+}
+
+section#cards {
+    margin-left: -4%;
+    margin-top: .6rem;
+    font-family: sans-serif;
+    padding: 3rem;
+}
+
+section#cards h1 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-shadow: 0px 3px 2px rgb(50, 50, 50, 1);
+    vertical-align: inherit;
+    margin-bottom: 40px;
+}
+
+section#cards .container {
+    width: 100%;
+    margin: 0;
+    word-wrap: break-word; /* força a quebra de linha ao chegar no fim do container */
+    font-family: sans-serif;
+    text-shadow: 0px 3px 2px rgb(50, 50, 50, 1);
+    background-color: rgba(0,0,0,0.25);
+    border: .5px solid white;
+    margin-bottom: 2rem;
+}
+
+section#cards h3 {
+    position: relative;
+    font-weight: normal;
+    top: -5rem;
+    font-size: 1.9;
+    margin-left: 8.4rem;
+}
+
+.container .icone {
+    height: 90px;
+    max-width: 90px;
+    margin: 1rem;
+    font-size: 3rem;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    transform: translateY(90%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section#cards p {
+    width: 55%;
+    font-size: 1rem;
+    position: relative;
+    top: -4rem;
+    margin-left: 8.3rem;
+    line-height: 2rem;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 38px;
+   
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 7px;
+}
+
+@media (min-width: 600px) {
+
+    input[type="checkbox"]:checked ~ .menu {
+        transform: translateX(-590px); 
+    }
+
+    section#cards {
+        margin-left: 15%;
+        margin-top: 25px;
+    }
+
+    section#cards .container {
+        width: 80%;
+    }
+
+    .container .icone {
+        max-width: 90px;
+        font-size: 50px;
+        position: relative;
+        bottom: -110px; 
+        transform: translateY(-55%); 
+      
+    }
+}
+
+@media(max-width: 400px) {
+    
+
+    section#cards h3 {
+        min-width: 50%;
+        position: relative;
+        right: 55px;
+        margin-top: 100px;
+    }
+
+    .container .icone {
+        position: relative;
+        bottom: 80px;
+        left: 80px;
+    }
+
+    section#cards p {
+        text-align: left;
+        margin: 20px;
+        width: 90%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    section#cards {
+        width: 60%;
+        margin-left: 35%;
+        margin-top:25px;
+        font-family: sans-serif;
+        padding: 50px;
+    }
+
+
+    section#cards .container {
+        width: 80%;
+    } 
+
+    section#cards h3 {
+        position: relative;
+        font-weight: normal;
+        top: -100px;
+        font-size: 25px;
+        margin-left: 150px;
+    }
+
+    .container .icone {
+        height: 90px;
+        max-width: 90px;
+        font-size: 50px;
+        position: relative;
+        bottom: -100px;
+        left: 20px; 
+        border-radius: 50%;
+        transform: translateY(-55%); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    section#cards p {
+        width: 55%;
+        font-size: 16px;
+        position: relative;
+        top: -88px;
+        margin-left: 150px;
+        line-height: 30px;
+    }
+    
+    footer {
+        position: relative;
+        top: -30px;
+        width: 40%;
+        margin-left: 55%;
+    }
+
+}

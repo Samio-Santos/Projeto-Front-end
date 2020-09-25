@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Template Front-end</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site modelo"> <!-- Descrição do site ou empresa -->
+    <meta name="keywords" content="HTML, CSS, Templates, contato, formulario"> <!-- Palavras chaves para encontrar sua página web -->
+    <meta name="author" content="Samio Santos"> <!-- Nome da sua empresa ou autor do site -->
+    <meta name="robots" content="index, follow"> <!-- controla o comportamento de rastreamento e indexação dos mecanismos de pesquisa. -->
+
+
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <link rel="shortcut icon" href="./projeto_imagens/icones/desenvolvedores.png">
+
+    <link href="fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <img id="menu" src="./imagens_projeto/cardapio_1.png" alt="Menu">
+        </label>
+    
+    <section class="menu">
+        <nav>
+            <ul>
+                <li><a href="./projeto5_site_index.html"><i class="fas fa-home tm-nav-fa-icon"></i><span>Introdução</span></a></li>
+                <li><a href="./projeto5_site_produtos.html"><i class="fas fa-map tm-nav-fa-icon"></i> <span>Produtos</span></a></li>
+                <li><a href="./projeto5_site_nossa_empresa.html"><i class="fas fa-users tm-nav-fa-icon"></i><span>Nossa empresa</span></a></li>
+                <li><a href="./projeto5_site_contato.html"><i class="fas fa-comments tm-nav-fa-icon"></i><span> Contate-Nos</span></a></li>
+            </ul>
+        </nav>
+        
+    </section>
+    
+    <main>
+        <section id="form">
+            <form id="contato-form" method="POST">
+                <h1>Contate-Nos</h1>
+
+                <div class="form-group">
+                    <input name="name" id="name" placeholder="Nome" required>
+                </div>
+
+                <div class="form-group">
+                    <input name="email" id="email" placeholder="E-mail" required>
+                </div>
+
+                <div class="textarea-form">
+                    <textarea name="bio" id="msg" placeholder="Mensagem" required></textarea>
+                </div>
+
+                <button class="button" type="submit">Enviar</button>
+
+                <p>Aliquam interdum, aedd faucibus tempor nisl, massa velit laoreet ipsum, et molestie nisl sapien magna, mas você diz. O estresse era a temperatura.</p>
+
+                <p>Um leão no Curabitur venenatis augue convallis Sed, vulputate sollicitudin ser alto.</p>
+                    
+                <address>
+                    120-240 Aliquam nec neque augue
+                    Suspendisse tincidunt agora,
+                    a vida das cortinas dos justos, 11000
+                </address>
+            </form>
+        </section>
+    
+
+        <footer>
+            <p>Copyright © 2018 Constructive Co. Ltd. - Design: Tooplate</p>
+        </footer>
+    </main>
+</body>
+</html>
